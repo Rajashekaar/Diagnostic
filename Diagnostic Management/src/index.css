@@ -1,0 +1,24 @@
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #D6ECFF, #A8D8FF, #FFFFFF);
+}
+
+h1 {
+  margin-left: 250px;
+  font-size: 4.2em;
+  line-height: 1.1;
+}
+
+p{
+  margin-left: 250px;
+  font-size: 2em;
+  opacity: 0.8;
+  line-height: 1.1;
+  margin-top: -20px;
+}
+
