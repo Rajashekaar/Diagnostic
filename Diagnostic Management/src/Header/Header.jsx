@@ -1,34 +1,35 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-<div >
-       <nav class="navbar navbar-expand-lg bg-body-tertiary bg-colo">
-  <div class="container-fluid">
-    <h2 class="font-weight-bold font-family ">DiagnoCare</h2>
-    
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-0 mb-2 mb-lg-0 ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Reports</a>
-        </li>
-        <li class="nav-item me-3">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-      </ul>
-     
-        <button class="btn btn-primary" type="submit ">Get Started</button>
-      
-    </div>
-  </div>
-</nav>
-</div>
+    <header>
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
+          <a className="navbar-brand fs-2 text-light" href="/">DiagnoCare</a>
+
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+            aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon" />
+          </button>
+
+          <div className="collapse navbar-collapse" id="nav">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/services">Service</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/reports">Reports</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
+
+            </ul>
+            <div className="ms-lg-3 d-flex align-items-center">
+              <Link to="/register">
+                <button className="btn btn-primary">Get Started</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
   );
 }
 

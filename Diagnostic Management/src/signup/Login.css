@@ -1,0 +1,45 @@
+    .login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+    }
+    .box {
+        width: 30vw;
+        height: 50vh;
+        background-color: whitesmoke;
+        border-radius: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .login {
+        text-align: center;
+
+    }
+
+    .input {
+        text-align: center;
+        width: 20vw;
+        height: 5vh;
+        border-radius: 5px;
+
+    }
+
+    .forgot {
+        display: block;
+        text-decoration: none;
+        text-align: left;
+        width: 20vw;
+    }
+
+    .button {
+        text-align: center;
+        width: 20vw;
+        height: 5vh;
+        border-radius: 5px;
+
+
+    }

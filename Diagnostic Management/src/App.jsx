@@ -1,27 +1,31 @@
-import React from 'react';
-import doctorImage from './assets/adobe.png';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Product from './Pages/Product.jsx';
+import Header from "./Header/Header.jsx";
+import Login from './signup/login.jsx';
+import Footer from "./Footer/Footer.jsx";
+import Services from "./Services/Services.jsx";
+// import Register from "./signup/Register.jsx";
 
 
 
 function App() {
-
   return (
-       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between',marginTop:'150px' }}>
-      <div>
-        <h1>Get Diagnostic <br />Tests & Health <br /> Checkups Done</h1>
+    <div>
 
-        <p>Book a hassle- free lab visit or home pickup <br />for samples and receive reports online</p>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Product />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/services" element={<Services />} />
+          {/* <Route path="/register" element={<Register />} /> */}
 
-        <button className="btn btn-primary" type="button" style={{ marginLeft: '250px' }}>Book Now</button>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
 
-      </div>
-       <div>
-        <img src={doctorImage} alt="Doctor" style={{ width: '400px', height: '400px',marginRight:'250px' }} />
-       </div>
-       
     </div>
-    
-     
   );
 }
 
