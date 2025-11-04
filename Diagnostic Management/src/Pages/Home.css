@@ -1,0 +1,144 @@
+.container {
+  max-width: 1100px;
+}
+
+.doc {
+  padding: 60px 0 120px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #e6f4ff;
+}
+
+.doc-content {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.doc-text h1 {
+  text-align: left;
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin: 0 0 12px;
+  color: #0b1b3a;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: rgba(10, 10, 10, 0.8);
+  margin-bottom: 18px;
+}
+
+.doc-cta .btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.doc-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doc-image img {
+  width: 420px;
+  max-width: 40vw;
+  height: auto;
+  display: block;
+}
+
+.services-section {
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #00d5ff;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.doc-footer {
+  position: relative;
+  width: 100%;
+  height: 56px;               
+  padding: 15px;          
+  background-color: #1f396c;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .doc-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .doc-image img {
+    width: 320px;
+    max-width: 44vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .doc {
+    padding: 32px 0 60px;
+    min-height: auto;
+  }
+
+  .doc-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 18px;
+  }
+
+  .doc-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .doc-image img {
+    width: 60vw;
+    max-width: 260px;
+  }
+
+  .doc-cta .btn {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+}

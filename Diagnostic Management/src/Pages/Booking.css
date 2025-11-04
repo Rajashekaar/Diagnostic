@@ -1,0 +1,46 @@
+.container-form{
+      font-family: "Poppins", sans-serif;
+
+    max-height: max-content;
+    max-width: max-content;
+}
+
+.mb-4{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container-form {
+  max-width: 600px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-form {
+    padding: 15px;
+  }
+
+  .container-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+  }
+
+  .form-control,
+  .form-select {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
